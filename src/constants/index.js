@@ -4,6 +4,12 @@ import {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  benefitImage6,
+  benefitImage7,
+  benefitImage8,
+  benefitImage9,
+  benefitImage10,
+  benefitImage11,
   chromecast,
   disc02,
   discord,
@@ -13,6 +19,21 @@ import {
   file02,
   framer,
   homeSmile,
+
+  mongo,
+  express,
+  react,
+  node,
+
+
+  Figma,
+  github,
+  tensor,
+  mathlab,
+
+  llm,
+
+
   instagram,
   notification2,
   notification3,
@@ -34,44 +55,104 @@ import {
   telegram,
   twitter,
   yourlogo,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
+  avatar6,
+  avatar7,
+  avatar8,
+  avatar9,
+
+  service3,
+
+  icon_inst,
+  icon_face,
+  icon_tele,
+  icon_link,
+
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
+  
+
 } from "../assets";
+
+
+
+export const Work = [
+  {
+    imgSrc: project1,
+    title: 'Full stack music app',
+    tags: ['API', 'MVC', 'Development'],
+    projectLink: '#'
+  },
+  {
+    imgSrc: project2,
+    title: 'Free stock photo app',
+    tags: ['API', 'SPA'],
+    projectLink: '#'
+  },
+  {
+    imgSrc: project3,
+    title: 'Recipe app',
+    tags: ['Development', 'API'],
+    projectLink: '#'
+  },
+  {
+    imgSrc: project4,
+    title: 'Real state website',
+    tags: ['Web-design', 'Development'],
+    projectLink: '#'
+  },
+  {
+    imgSrc: project5,
+    title: 'eCommerce website',
+    tags: ['eCommerce', 'Development'],
+    projectLink: '#'
+  },
+  {
+    imgSrc: project6,
+    title: 'vCard Personal portfolio',
+    tags: ['Web-design', 'Development'],
+    projectLink: '#'
+  },
+];
+
+
+
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Home",
+    url: "#hero",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Services",
+    url: "#features",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Project",
+    url: "#project",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Contact",
+    url: "#footer",
   },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+  
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export const heroIcons = [mongo, express, react, node];
+
+export const heroIcons1 = [Figma, github, tensor,  mathlab];
 
 export const notificationImages = [notification4, notification3, notification2];
 
@@ -94,11 +175,11 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
+    title: "LLM (Large Language Model)",
+    text: "We are developing AI models based on Sanskrit's structured grammar to enhance accuracy in NLP tasks, generating precise outputs in English while leveraging Sanskrit’s linguistic rules.",
+    date: "May 2025",
+    status: "progress",
+    imageUrl: llm,
     colorful: true,
   },
   {
@@ -240,89 +321,306 @@ export const pricing = [
     ],
   },
 ];
-
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Web Development",
+    text: "Create modern, responsive, and SEO-friendly websites tailored to businesses and personal brands.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    iconUrl: benefitImage6,
+    imageUrl: service3,
+    head_1: "Web Development Process",
+    process: [
+      { stage: "Requirement Gathering & Analysis", description: "Understand project scope, goals, and target audience." },
+      { stage: "Planning & Strategy", description: "Create a roadmap, define technology stack, and allocate resources." },
+      { stage: "Design Phase", description: "Create wireframes and prototypes, focus on UI/UX design." },
+      { stage: "Development Phase", description: "Build front-end (HTML, CSS, JS) and back-end (server, database)." },
+      { stage: "Testing & Quality Assurance", description: "Ensure functionality, performance, security, and cross-browser compatibility." },
+      { stage: "Deployment", description: "Deploy to live server, set up domain, and ensure mobile responsiveness." },
+      { stage: "SEO Optimization", description: "Optimize site for search engines with proper tags, URLs, and content." },
+      { stage: "Launch & Post-Launch Support", description: "Monitor performance, fix bugs, and gather user feedback." },
+      { stage: "Maintenance & Optimization", description: "Regular updates, security patches, and performance enhancements." }
+    ]
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "App Development",
+    text: "Build high-performance mobile and web apps with intuitive UI/UX and cross-platform compatibility.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: benefitImage7,
     imageUrl: benefitImage2,
     light: true,
+    head_1: "App Development Process",
+    process: [
+      { stage: "Requirement Gathering & Analysis", description: "Understand project scope, goals, and target audience." },
+      { stage: "Planning & Strategy", description: "Create a roadmap, define technology stack, and allocate resources." },
+      { stage: "Design Phase", description: "Create wireframes and prototypes, focus on UI/UX design." },
+      { stage: "Development Phase", description: "Build front-end (HTML, CSS, JS) and back-end (server, database)." },
+      { stage: "Testing & Quality Assurance", description: "Ensure functionality, performance, security, and cross-browser compatibility." },
+      { stage: "Deployment", description: "Deploy to live server, set up domain, and ensure mobile responsiveness." },
+      { stage: "SEO Optimization", description: "Optimize site for search engines with proper tags, URLs, and content." },
+      { stage: "Launch & Post-Launch Support", description: "Monitor performance, fix bugs, and gather user feedback." },
+      { stage: "Maintenance & Optimization", description: "Regular updates, security patches, and performance enhancements." }
+    ]
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Data Science & Analytics",
+    text: "Extract actionable insights from data using predictive analytics, visualization, and business intelligence.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    iconUrl: benefitImage8,
+    imageUrl: service3,
+    head_1: "Data Science & Analytics Process",
+    process: [
+      { stage: "Problem Definition", description: "Identify business problems and determine how data can solve them." },
+      { stage: "Data Collection", description: "Gather data from various sources like databases, APIs, and surveys." },
+      { stage: "Data Cleaning & Preprocessing", description: "Clean, filter, and preprocess raw data for analysis." },
+      { stage: "Exploratory Data Analysis (EDA)", description: "Analyze data patterns, trends, and outliers using statistical methods." },
+      { stage: "Model Building", description: "Use machine learning algorithms to build predictive models." },
+      { stage: "Model Evaluation", description: "Evaluate model performance using metrics like accuracy, precision, and recall." },
+      { stage: "Data Visualization", description: "Visualize data insights using graphs, charts, and dashboards for better understanding." },
+      { stage: "Deployment", description: "Deploy the model into production systems for real-time analysis or decision-making." },
+      { stage: "Monitoring & Maintenance", description: "Monitor model performance and retrain as necessary to ensure optimal performance." }
+    ]
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "AI & Machine Learning Solutions",
+    text: "Develop AI-powered solutions like recommendation systems, fraud detection, and automation models.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
+    iconUrl: benefitImage9,
     imageUrl: benefitImage2,
     light: true,
+    head_1: "AI & Machine Learning Process",
+    process: [
+      { stage: "Problem Identification", description: "Identify business problems that AI/ML can solve." },
+      { stage: "Data Collection", description: "Gather and prepare data for training AI models." },
+      { stage: "Model Selection & Training", description: "Choose the right machine learning model and train it on the data." },
+      { stage: "Model Evaluation", description: "Evaluate model performance using various metrics like precision, recall, and F1 score." },
+      { stage: "Deployment", description: "Deploy the trained model into production for real-time predictions." },
+      { stage: "Monitoring & Optimization", description: "Monitor the performance of the deployed model and optimize it for better results." },
+      { stage: "Continuous Learning", description: "Implement feedback loops and retrain the model with new data to improve accuracy." }
+    ]
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Chatbots & Virtual Assistants",
+    text: "Automate customer interactions with intelligent chatbots and AI-driven virtual assistants for various industries.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    iconUrl: benefitImage10,
+    imageUrl: service3,
+    head_1: "Chatbot Development Process",
+    process: [
+      { stage: "Requirement Analysis", description: "Identify the needs and goals of the chatbot or virtual assistant." },
+      { stage: "Designing Conversations", description: "Design the conversational flow and user intents for interaction." },
+      { stage: "Platform Selection", description: "Choose the right platform and tools to build the chatbot (e.g., Messenger, WhatsApp)." },
+      { stage: "Development", description: "Develop the chatbot with natural language processing (NLP) capabilities." },
+      { stage: "Testing", description: "Test the chatbot for accuracy, response time, and handling diverse inputs." },
+      { stage: "Deployment", description: "Deploy the chatbot across channels (e.g., websites, apps, social media)." },
+      { stage: "Monitoring & Optimization", description: "Monitor chatbot performance and improve with user feedback and analytics." }
+    ]
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Digital Marketing",
+    text: "Boost online presence with SEO, social media marketing, paid ads, content creation, and branding strategies.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: benefitImage11,
     imageUrl: benefitImage2,
+    head_1: "Digital Marketing Process",
+    process: [
+      { stage: "Market Research", description: "Identify target audience, competitors, and industry trends." },
+      { stage: "SEO Strategy", description: "Develop an SEO strategy to improve organic traffic and search engine rankings." },
+      { stage: "Content Creation", description: "Create engaging and valuable content for blogs, social media, and ads." },
+      { stage: "Social Media Marketing", description: "Promote brand through social media platforms, build engagement, and foster community." },
+      { stage: "Paid Advertising", description: "Run targeted paid ads on platforms like Google, Facebook, and Instagram." },
+      { stage: "Analytics & Reporting", description: "Track performance through analytics tools, adjust strategies based on data." },
+      { stage: "Continuous Improvement", description: "Refine marketing strategies based on feedback and performance metrics." }
+    ]
   },
 ];
 
-export const socials = [
+
+
+
+export const testimonials = [
   {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    imageSrc: avatar1,
+    name: "Jamie Rivera",
+    username: "@jamietechguru00",
   },
   {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    text: "Our team's productivity has skyrocketed since we started using this tool. ",
+    imageSrc: avatar2,
+    name: "Josh Smith",
+    username: "@jjsmith",
   },
   {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    text: "This app has completely transformed how I manage my projects and deadlines.",
+    imageSrc: avatar3,
+    name: "Morgan Lee",
+    username: "@morganleewhiz",
   },
   {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+    imageSrc: avatar4,
+    name: "Casey Jordan",
+    username: "@caseyj",
   },
   {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+    imageSrc: avatar5,
+    name: "Taylor Kim",
+    username: "@taylorkimm",
+  },
+  {
+    text: "The customizability and integration capabilities of this app are top-notch.",
+    imageSrc: avatar6,
+    name: "Riley Smith",
+    username: "@rileysmith1",
+  },
+  {
+    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+    imageSrc: avatar7,
+    name: "Jordan Patels",
+    username: "@jpatelsdesign",
+  },
+  {
+    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+    imageSrc: avatar8,
+    name: "Sam Dawson",
+    username: "@dawsontechtips",
+  },
+  {
+    text: "Its user-friendly interface and robust features support our diverse needs.",
+    imageSrc: avatar9,
+    name: "Casey Harper",
+    username: "@casey09",
   },
 ];
+
+
+
+
+
+export const faqs_items = [
+  {
+    question: "What services does your startup offer?",
+    answer: "We specialize in web development, app development (both iOS and Android), and AI integration to create innovative, scalable, and user-friendly solutions tailored to your business needs.",
+
+  },
+  {
+    question: "How can AI integration benefit my business?",
+    answer: "AI can automate repetitive tasks, enhance decision-making with data-driven insights, improve customer experiences with chatbots, and personalize services to boost engagement and efficiency.",
+
+  },
+  {
+    question: "Do you work with startups or established businesses?",
+    answer: "We work with businesses of all sizes, from startups looking to build their first platform to established enterprises aiming to enhance their digital capabilities.",
+
+  },
+  {
+    question: "How long does it take to develop a web or mobile application?",
+    answer: "The timeline depends on the project's complexity and requirements. A basic application may take 4–8 weeks, while more complex solutions can take several months.",
+
+  },
+];
+
+
+
+
+export const footerLinks = [
+  {
+    title: "Useful Links",
+    links: [
+      {
+        name: "Content",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "How it Works",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+      {
+        name: "Create",
+        link: "https://www.hoobank.com/create/",
+      },
+      {
+        name: "Explore",
+        link: "https://www.hoobank.com/explore/",
+      },
+      {
+        name: "Terms & Services",
+        link: "https://www.hoobank.com/terms-and-services/",
+      },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      {
+        name: "Help Center",
+        link: "https://www.hoobank.com/help-center/",
+      },
+      {
+        name: "Partners",
+        link: "https://www.hoobank.com/partners/",
+      },
+      {
+        name: "Suggestions",
+        link: "https://www.hoobank.com/suggestions/",
+      },
+      {
+        name: "Blog",
+        link: "https://www.hoobank.com/blog/",
+      },
+      {
+        name: "Newsletters",
+        link: "https://www.hoobank.com/newsletters/",
+      },
+    ],
+  },
+  {
+    title: "Partner",
+    links: [
+      {
+        name: "Our Partner",
+        link: "https://www.hoobank.com/our-partner/",
+      },
+      {
+        name: "Become a Partner",
+        link: "https://www.hoobank.com/become-a-partner/",
+      },
+    ],
+  },
+];
+
+export const socialMedia = [
+  {
+    id: "social-media-1",
+    icon: icon_inst,
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: "social-media-2",
+    icon: icon_face,
+    link: "https://www.facebook.com/",
+  },
+  {
+    id: "social-media-3",
+    icon: icon_tele,
+    link: "https://www.twitter.com/",
+  },
+  {
+    id: "social-media-4",
+    icon: icon_link,
+    link: "https://www.linkedin.com/",
+  },
+];
+
+
+
+
+
+

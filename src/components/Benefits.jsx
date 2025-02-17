@@ -1,17 +1,32 @@
-import { benefits } from "../constants";
+import { useState } from "react";
+import { benefits } from "../constants"; // Use benefits array
+
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import Model from "./Model";
 
 const Benefits = () => {
+  const [showModel, setShowModel] = useState(false);
+  const [selectedBenefit, setSelectedBenefit] = useState(null);
+
+  const handleExploreMore = (benefitId) => {
+    // Find the clicked benefit data from the 'benefits' array
+    const benefitData = benefits.find(item => item.id === benefitId);
+    if (benefitData) {
+      setSelectedBenefit(benefitData); // Set the selected benefit data
+      setShowModel(true); // Show the modal
+    }
+  };
+
   return (
     <Section id="features">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with Brainwave"
+          title="Our Services"
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
@@ -23,7 +38,7 @@ const Benefits = () => {
               }}
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
@@ -33,9 +48,14 @@ const Benefits = () => {
                     height={48}
                     alt={item.title}
                   />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  {/* Pass the benefit id when clicking the button */}
+                  <button
+                    className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider"
+                    onClick={() => handleExploreMore(item.id)}
+                  >
                     Explore more
-                  </p>
+                  </button>
+
                   <Arrow />
                 </div>
               </div>
@@ -64,6 +84,16 @@ const Benefits = () => {
           ))}
         </div>
       </div>
+
+      {/* Pass the selectedBenefit to Model */}
+      <Model
+        isVisible={showModel}
+        handleClose={() => {
+          setShowModel(false);
+          setSelectedBenefit(null);
+        }}
+        data={selectedBenefit} // Pass selectedBenefit object
+      />
     </Section>
   );
 };
