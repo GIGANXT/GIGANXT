@@ -30,6 +30,7 @@ import Figma from "./mern/icons8-figma-100.png"
 import github from "./mern/icons8-github-logo-100.png"
 import tensor from "./mern/icons8-tensorflow-100.png"
 import mathlab from "./mern/icons8-matlab-100.png"
+import giganxt from "./main_log/giganxt_log.jpg"
 
 
 
@@ -178,6 +179,8 @@ export {
   icon_tele,
   icon_link,
   logo,
+
+  giganxt,
   
 
   project1,
