@@ -5,15 +5,11 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined
-      }
-    }
+    sourcemap: true
   },
+  base: '/',
   server: {
+    port: 3000,
     host: true
-  },
-  base: './'
+  }
 })
