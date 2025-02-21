@@ -168,7 +168,7 @@ export {
   express,
   react,
   node,
- 
+
   Figma,
   github,
   tensor,
@@ -181,7 +181,7 @@ export {
   logo,
 
   giganxt,
-  
+
 
   project1,
   project2,
@@ -191,7 +191,7 @@ export {
   project6,
 
 
- 
+
 
 
 
